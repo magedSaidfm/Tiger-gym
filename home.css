@@ -1,0 +1,42 @@
+
+/* home */
+.home
+{
+    height: 100vh;
+    border: solid 1px black;
+    background-image: url("../images/home-welcom.jpeg");
+    background-size: cover;
+    
+}
+.site-title
+{
+    color: white;
+    text-transform:uppercase;
+    margin-top: 165px;
+    margin-left: 100px;
+    
+}
+.qute
+{
+    font-size: 20px;
+    
+}
+.main-title{
+    font-size: 75px;
+    color: #B61720;
+}
+.site-buttons
+{
+   margin-left: 99px;
+   margin-top: 10px;
+}
+
+.btn-color-red
+{
+   background-color: #B61720;
+   color: white;
+}
+.site-title p{
+    letter-spacing: 2px;
+}
+
