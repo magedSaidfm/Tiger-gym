@@ -1,0 +1,87 @@
+.Pricing-item
+{
+    width: 30%;
+    float: left;
+    border:solid 1px black;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+.pricing-item-circle-price
+{
+    text-transform: uppercase;
+    width: 90px;
+    height: 90px;
+    border: solid 2px #FF4500;
+    border-radius: 50%;
+    margin: auto;
+}
+.pricing-item-circle-price-number
+{
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 3px;
+}
+.Pricing-item-title
+{
+    font-size: 30px;
+    display: block;
+    color:gray;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.pricing-item-details
+{
+    margin: 15px 0px;
+    
+}
+.pricing-item-details li{
+    
+    list-style: none;
+    color:gray;
+    text-align: left;
+    margin: 10px 20px;
+    text-transform: capitalize;
+}
+.pricing-item-purchase
+{
+    border:solid 2px #B61720;
+    padding: 5px 20px;
+    margin: 10px 0px;
+    background-color: white;
+    text-transform: capitalize;
+}
+.Pricing
+{
+    overflow: hidden;
+}
+.Pricing-item::after
+{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top:0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+    transition: 1s;
+}
+.Pricing-item:hover::after
+{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.Pricing-item:hover .pricing-item-circle-price
+{
+   color:#FF4500;
+}
+.Pricing-item:hover .Pricing-item-title
+{
+   color:#FF4500;
+}
+.Pricing-item:hover .pricing-item-circle-price,.Pricing-item:hover .pricing-item-purchase
+{
+   border: solid 2px black;
+}

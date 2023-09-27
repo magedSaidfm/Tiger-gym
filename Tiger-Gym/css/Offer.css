@@ -1,0 +1,47 @@
+.Offer-item
+{
+    width:30% ;
+    float: left;
+    border: solid 1px black;
+    position: relative;
+    padding: 10px 5px 20px 60px;
+    margin-bottom: 20px;
+}
+.Offer-item i{
+    position: absolute;
+    top:10;
+    left:10;
+}
+.Offer-item p{
+   margin-top: 10px;
+   font-size: 15px;
+   color: gray;
+}
+.Offer-item::after
+{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top:0;
+    left:0;
+    background-color: black;
+    opacity: 0;
+    transition: 0.5s;
+}
+.Offer-item:hover::after
+{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.Offer-item:hover h2{
+    color: white;
+}
+.Offer-item:hover i{
+    color:#E75A5E;
+}
+
+

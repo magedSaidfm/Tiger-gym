@@ -1,0 +1,86 @@
+/* our-services */
+.our-services
+{
+    padding: 60px 0px;
+}
+.section-header
+{
+    text-align: center;
+}
+.section-title
+{
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.services-container
+{
+    width: 80%;
+    margin: auto;
+}
+.services-contant
+{
+    text-align: center;
+    height: 350px;
+    overflow: hidden;
+  
+
+}
+.service-item
+{
+    width: 30%;
+    border: solid 1px black;
+    float:left;
+    margin-right: 10px;
+    padding: 30px 10px;
+    text-align: center;
+    position: relative;
+   
+ 
+}
+.service-icon
+{
+    font-size: 30px;
+    color:#B61720
+}
+.service-item::after
+{
+    position: absolute;
+    content:"";
+    width:25%;
+    height: 0%;
+    left:0;
+    top:0;
+    background-color:#000000;
+    opacity: 0;
+    transition: 1s;
+}
+.service-item:hover::after
+{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    z-index: -1;
+
+    
+    /* Diana@0598786578 */
+}
+.service-item:hover
+{
+    color: white;
+    transition: color 0.5s;
+
+}
+.service-item:hover i
+{
+    color:#E75A5E
+    
+}
+.service-item a{
+    display: block;
+    margin-top: 20px;
+    text-decoration:none;
+    color:#e75a61;
+    text-transform: capitalize;
+}
+
+
