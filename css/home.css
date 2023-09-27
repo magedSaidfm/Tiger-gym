@@ -4,7 +4,7 @@
 {
     height: 100vh;
     border: solid 1px black;
-    background-image: url("/images/home-welcom.jpeg");
+    background-image: URL("../images/home-welcom.jpeg");
     background-size: cover;
     
 }
